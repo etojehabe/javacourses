@@ -19,22 +19,22 @@ public class Main {
         double time = 10, result;
 
 
-        if(number1 == code[0]){
+        if (number1 == code[0]) {
             result = cost[0] * time;
             System.out.println(city[0] + " Стоимость разговора: " + result);
-        }else{
-            if(number1 == code[1]){
+        } else {
+            if (number1 == code[1]) {
                 result = cost[2] * time;
                 System.out.println(city[1] + " Стоимость разговора: " + result);
-            }else{
-                if(number1 == code[2]){
+            } else {
+                if (number1 == code[2]) {
                     result = cost[2] * time;
                     System.out.println(city[2] + " Стоимость разговора: " + result);
-                }else{
-                    if(number1 == code[3]){
+                } else {
+                    if (number1 == code[3]) {
                         result = cost[3] * time;
                         System.out.println(city[3] + " Стоимость разговора: " + result);
-                    }else{
+                    } else {
                         System.out.println("Введенный код не найден");
                     }
                 }

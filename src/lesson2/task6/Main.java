@@ -11,18 +11,18 @@ public class Main {
         String a = reader.readLine();
         int number1 = Integer.parseInt(a);
 
-        if(number1 > 0 && number1 % 2 ==0){
+        if (number1 > 0 && number1 % 2 == 0) {
             System.out.println(number1 + " - Положительное четное число");
-        }else{
-            if(number1 > 0 && number1 % 2 !=0){
+        } else {
+            if (number1 > 0 && number1 % 2 != 0) {
                 System.out.println(number1 + " - Положительное нечетное число");
-            }else{
-                if(number1 < 0 && number1 % 2 == 0){
+            } else {
+                if (number1 < 0 && number1 % 2 == 0) {
                     System.out.println(number1 + " - Отрицательное четное число");
-                }else{
-                    if(number1 < 0 && number1 % 2 != 0){
+                } else {
+                    if (number1 < 0 && number1 % 2 != 0) {
                         System.out.println(number1 + " - Отрицательное нечетное число");
-                    }else{
+                    } else {
                         System.out.println(number1 + " - Нулевое число");
                     }
                 }
