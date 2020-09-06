@@ -21,7 +21,7 @@ public class Main {
 
         if(number1 == code[0]){
             result = cost[0] * time;
-            System.out.println(city[1] + " Стоимость разговора: " + result);
+            System.out.println(city[0] + " Стоимость разговора: " + result);
         }else{
             if(number1 == code[1]){
                 result = cost[2] * time;
@@ -29,11 +29,11 @@ public class Main {
             }else{
                 if(number1 == code[2]){
                     result = cost[2] * time;
-                    System.out.println(city[1] + " Стоимость разговора: " + result);
+                    System.out.println(city[2] + " Стоимость разговора: " + result);
                 }else{
                     if(number1 == code[3]){
                         result = cost[3] * time;
-                        System.out.println(city[1] + " Стоимость разговора: " + result);
+                        System.out.println(city[3] + " Стоимость разговора: " + result);
                     }else{
                         System.out.println("Введенный код не найден");
                     }
