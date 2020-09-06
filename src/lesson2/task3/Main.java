@@ -9,9 +9,9 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         int number = Integer.parseInt(s);
-        if(number > 0){
+        if (number > 0) {
             System.out.println(number + 1);
-        }else{
+        } else {
             System.out.println(number);
         }
     }

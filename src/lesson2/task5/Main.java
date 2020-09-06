@@ -14,13 +14,13 @@ public class Main {
         String d = reader.readLine();
         int number3 = Integer.parseInt(d);
 
-        if(number1 <= number2 && number1 <= number3){
+        if (number1 <= number2 && number1 <= number3) {
             System.out.println(number1);
-        }else{
-            if(number2 <= number1 && number2 <= number3){
+        } else {
+            if (number2 <= number1 && number2 <= number3) {
                 System.out.println(number2);
-            }else{
-                if(number3 <= number2 && number3 <= number1){
+            } else {
+                if (number3 <= number2 && number3 <= number1) {
                     System.out.println(number3);
                 }
             }

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int[] numbers = {1, -10, 5, 6, 45, 23, -45, -34, 0, 32, 56, -1, 2, -2};
         int max = numbers[0];
-        int sumPositive = 0, sumNegative= 0, sumNegativeOdd = 0, avgNegative = 0, countPositive = 0, countNegative = 0;
+        int sumPositive = 0, sumNegative = 0, sumNegativeOdd = 0, avgNegative = 0, countPositive = 0, countNegative = 0;
 
         for (int number : numbers) {
 
