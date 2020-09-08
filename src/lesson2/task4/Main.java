@@ -9,14 +9,14 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         int number = Integer.parseInt(s);
-        if (number > 1) {
+
+        if (number > 0) {
             System.out.println(number + 1);
+        } else if (number < 0) {
+            System.out.println(number - 2);
         } else {
-            if (number < 0) {
-                System.out.println(number - 2);
-            } else {
-                System.out.println(10);
-            }
+            System.out.println(10);
         }
     }
 }
+

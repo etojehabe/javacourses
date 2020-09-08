@@ -5,25 +5,26 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String a = reader.readLine();
-        int number1 = Integer.parseInt(a);
-        String s = reader.readLine();
-        int number2 = Integer.parseInt(s);
-        String d = reader.readLine();
-        int number3 = Integer.parseInt(d);
+    public static void main(String... args) throws IOException {
+        int count = 0;
+        int min = Integer.MAX_VALUE;
 
-        if (number1 <= number2 && number1 <= number3) {
-            System.out.println(number1);
-        } else {
-            if (number2 <= number1 && number2 <= number3) {
-                System.out.println(number2);
-            } else {
-                if (number3 <= number2 && number3 <= number1) {
-                    System.out.println(number3);
-                }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введите количество чисел для сравнения");
+
+        int exit = Integer.parseInt(reader.readLine());
+
+        System.out.println("Теперь введите сами числа");
+
+        do {
+            int numb = Integer.parseInt(reader.readLine());
+            if (numb < min) {
+                min = numb;
             }
-        }
+            count++;
+        } while (count != exit);
+        System.out.println("Наименьшее число - " + min);
+
     }
 }

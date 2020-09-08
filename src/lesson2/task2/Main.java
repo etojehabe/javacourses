@@ -9,13 +9,15 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         int number = Integer.parseInt(s);
-        int sum = 0;
-        sum(number, sum);
+        sum(number);
+
     }
 
-    public static void sum(int n, int sum) {
-        for (; n != 0; n /= 10)
-            sum += n % 10;
-        System.out.println(Math.abs(sum));
+    public static void sum(int n) {
+        int sm = 0;
+        for (; n != 0; n /= 10) {
+            sm += n % 10;
+        }
+        System.out.println(Math.abs(sm));
     }
 }
