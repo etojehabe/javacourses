@@ -34,7 +34,4 @@ public class Dog extends Animal {
         System.out.println("Собака ест");
     }
 
-    public String toString() {
-        return food + ", " + location + ", " + dogBreed;
-    }
 }

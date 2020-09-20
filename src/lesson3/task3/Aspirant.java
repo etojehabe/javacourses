@@ -4,8 +4,12 @@ public class Aspirant extends Student {
 
     private boolean sciWork;
 
-    public boolean hasSciWork() {
-        return sciWork;
+    public void hasSciWork() {
+        if(sciWork){
+            System.out.println("У этого аспиранта есть научная работа");
+        }else{
+            System.out.println("У этого аспиранта нет научной работы");
+        }
     }
 
     public Aspirant(String firstName, String lastName, String group, double averageMark) {
