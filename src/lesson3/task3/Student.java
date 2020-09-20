@@ -1,8 +1,8 @@
 package lesson3.task3;
 
 public class Student {
-    public String firstName, lastName, group;
-    public double averageMark;
+    private String firstName, lastName, group;
+    private double averageMark;
 
 
     public Student(String firstName, String lastName, String group, double averageMark) {
@@ -19,7 +19,11 @@ public class Student {
     public String getGroup() {
         return group;
     }
- 
+
+    public double getAverageMark() {
+        return averageMark;
+    }
+
     public void getScholarship() {
         if (averageMark == 5) {
             System.out.println(firstName + " получает стипендию " + 100);

@@ -1,13 +1,12 @@
 package lesson3.task3;
 
 public class Aspirant extends Student {
-
     private boolean sciWork;
 
     public void hasSciWork() {
-        if(sciWork){
+        if (sciWork) {
             System.out.println("У этого аспиранта есть научная работа");
-        }else{
+        } else {
             System.out.println("У этого аспиранта нет научной работы");
         }
     }
@@ -19,10 +18,11 @@ public class Aspirant extends Student {
 
     @Override
     public void getScholarship() {
-        if (averageMark == 5) {
-            System.out.println(firstName + " получает стипендию " + 200);
+
+        if (getAverageMark() == 5) {
+            System.out.println(getFirstName() + " получает стипендию " + 200);
         } else {
-            System.out.println(firstName + " получает стипендию " + 180);
+            System.out.println(getFirstName() + " получает стипендию " + 180);
         }
     }
 

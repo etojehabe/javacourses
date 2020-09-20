@@ -1,7 +1,5 @@
 package lesson3.task1;
 
-import lesson3.task3.Student;
-
 public class Main {
     public static void main(String[] args) {
 
